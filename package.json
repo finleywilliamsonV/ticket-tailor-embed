@@ -5,10 +5,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:github": "ng build --configuration production --base-href /ticket-tailor-embed/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:ticket-tailor-embed": "node dist/ticket-tailor-embed/server/server.mjs",
-    "deploy": "gh-pages -d dist/ticket-tailor-embed/browser"
+    "deploy": "gh-pages -d dist/ticket-tailor-embed/browser",
+    "build-and-deploy": "npm run build:github && npm run deploy"
   },
   "private": true,
   "dependencies": {
