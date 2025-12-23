@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ticket-tailor-embed": "node dist/ticket-tailor-embed/server/server.mjs"
+    "serve:ssr:ticket-tailor-embed": "node dist/ticket-tailor-embed/server/server.mjs",
+    "deploy": "gh-pages -d dist/ticket-tailor-embed/browser"
   },
   "private": true,
   "dependencies": {
